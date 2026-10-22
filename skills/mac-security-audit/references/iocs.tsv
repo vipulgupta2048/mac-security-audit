@@ -1,0 +1,48 @@
+# Known-bad package versions, extension ids and host paths, matched by scripts/ioc.sh.
+# Columns (tab-separated): type  name  versions  incident  date  source
+#   type      npm | pypi | vscode | chrome | path
+#   versions  comma-separated exact versions, or * for every version
+#   path      may use ~ and $TMPDIR, and shell globs
+# Add an entry only with a primary source. Last reviewed: 2026-10-22.
+type	name	versions	incident	date	source
+npm	tensorlake	0.5.144	Tensorlake worm (ChainDrop family)	2026-10-08	https://stepsecurity.io/blog/tensorlake-npm-compromised-hostage-token-worm
+npm	function-flag	1.7.3,2.3.5,2.3.6,2.3.7,2.3.8,2.3.9,3.0.0,4.0.0	MALFEX (Overlord RAT)	2026-10-05	https://checkmarx.com/zero-post/malfex-npm-malware-campaign-three-payloads-and-an-adversary-that-signs-their-work.md
+npm	function-color	1.0.0,1.7.3	MALFEX (Overlord RAT)	2026-10-05	https://checkmarx.com/zero-post/malfex-npm-malware-campaign-three-payloads-and-an-adversary-that-signs-their-work.md
+npm	cdn-img-fetch	1.0.0,1.0.1,1.0.2,1.0.3	MALFEX (Overlord RAT)	2026-10-05	https://checkmarx.com/zero-post/malfex-npm-malware-campaign-three-payloads-and-an-adversary-that-signs-their-work.md
+npm	img-to-native	1.0.0,1.0.1,1.0.2,1.0.3	MALFEX (Overlord RAT)	2026-10-05	https://checkmarx.com/zero-post/malfex-npm-malware-campaign-three-payloads-and-an-adversary-that-signs-their-work.md
+npm	native-runner	1.0.0,1.0.1,1.0.2,1.0.3	MALFEX (Overlord RAT)	2026-10-05	https://checkmarx.com/zero-post/malfex-npm-malware-campaign-three-payloads-and-an-adversary-that-signs-their-work.md
+npm	tlxbnhd	0.0.1	MALFEX (Overlord RAT)	2026-10-05	https://checkmarx.com/zero-post/malfex-npm-malware-campaign-three-payloads-and-an-adversary-that-signs-their-work.md
+npm	tldriver	0.0.1	MALFEX (Overlord RAT)	2026-10-05	https://checkmarx.com/zero-post/malfex-npm-malware-campaign-three-payloads-and-an-adversary-that-signs-their-work.md
+npm	mxdriver	0.0.1,0.0.2	MALFEX (Overlord RAT)	2026-10-05	https://checkmarx.com/zero-post/malfex-npm-malware-campaign-three-payloads-and-an-adversary-that-signs-their-work.md
+npm	@apexacc/cli	*	Apex Accelerator (REF8801)	2026-10-12	https://www.elastic.co/security-labs/threat-command/apex-accelerator-malicious-npm-packages
+npm	@apexacc/audit	*	Apex Accelerator (REF8801)	2026-10-12	https://www.elastic.co/security-labs/threat-command/apex-accelerator-malicious-npm-packages
+npm	@apexfdn/apex	*	Apex Accelerator (REF8801)	2026-10-12	https://www.elastic.co/security-labs/threat-command/apex-accelerator-malicious-npm-packages
+npm	@copilot-mcp/apex	*	Apex Accelerator (REF8801)	2026-10-12	https://www.elastic.co/security-labs/threat-command/apex-accelerator-malicious-npm-packages
+npm	@dforge-core/dforge-mcp	0.2.21	GHAPPIER loader (malicious MCP server)	2026-09-22	https://orca.security/resources/research/ghappier-loader-npm-supply-chain-attack/
+npm	keyv	6.0.0	ChainDrop worm wave 1	2026-08-04	https://stepsecurity.io/blog/chaindrop-npm-worm
+npm	flat-cache	6.1.24	ChainDrop worm wave 1	2026-08-04	https://stepsecurity.io/blog/chaindrop-npm-worm
+npm	file-entry-cache	11.1.6	ChainDrop worm wave 1	2026-08-04	https://stepsecurity.io/blog/chaindrop-npm-worm
+npm	cacheable-request	13.0.20	ChainDrop worm wave 1	2026-08-04	https://stepsecurity.io/blog/chaindrop-npm-worm
+npm	cacheable	2.5.1	ChainDrop worm wave 1	2026-08-04	https://stepsecurity.io/blog/chaindrop-npm-worm
+npm	@cacheable/utils	2.5.1	ChainDrop worm wave 1	2026-08-04	https://stepsecurity.io/blog/chaindrop-npm-worm
+npm	@cacheable/memory	2.2.1	ChainDrop worm wave 1	2026-08-04	https://stepsecurity.io/blog/chaindrop-npm-worm
+npm	@cacheable/node-cache	3.1.2	ChainDrop worm wave 1	2026-08-04	https://stepsecurity.io/blog/chaindrop-npm-worm
+npm	@cacheable/net	2.1.1	ChainDrop worm wave 1	2026-08-04	https://stepsecurity.io/blog/chaindrop-npm-worm
+npm	cache-manager	7.2.10	ChainDrop worm wave 1	2026-08-04	https://stepsecurity.io/blog/chaindrop-npm-worm
+npm	ecto	5.0.1	ChainDrop worm wave 1	2026-08-04	https://stepsecurity.io/blog/chaindrop-npm-worm
+npm	@thiennq/docs-viewer	1.6.2	ChainDrop worm	2026-08-04	https://stepsecurity.io/blog/chaindrop-npm-worm
+npm	node-ipc	9.1.6,9.2.3,12.0.1	node-ipc malicious releases	2026-05-14	https://www.stepsecurity.io/blog/node-ipc-npm-supply-chain-attack
+npm	@tanstack/history	1.161.9,1.161.12	TanStack / Mini Shai-Hulud (partial list; see GHSA-g7cv-rxg3-hmpx)	2026-05-11	https://tanstack.com/blog/npm-supply-chain-compromise-postmortem
+npm	mbt	1.2.48	SAP CAP / Mini Shai-Hulud	2026-04-29	https://snyk.io/blog/bun-based-stealer-hits-sap-cap-js-mbt-npm-packages/
+npm	@cap-js/db-service	2.10.1	SAP CAP / Mini Shai-Hulud	2026-04-29	https://snyk.io/blog/bun-based-stealer-hits-sap-cap-js-mbt-npm-packages/
+npm	@cap-js/sqlite	2.2.2	SAP CAP / Mini Shai-Hulud	2026-04-29	https://snyk.io/blog/bun-based-stealer-hits-sap-cap-js-mbt-npm-packages/
+npm	@cap-js/postgres	2.2.2	SAP CAP / Mini Shai-Hulud	2026-04-29	https://snyk.io/blog/bun-based-stealer-hits-sap-cap-js-mbt-npm-packages/
+pypi	xinference	2.6.0,2.6.1,2.6.2	PyPI xinference compromise	2026-04-22	https://advisories.gitlab.com/pkg/pypi/xinference/
+pypi	mistralai	2.4.6	Mini Shai-Hulud (PyPI)	2026-05-01	https://advisories.gitlab.com/pkg/pypi/mistralai/
+path	~/Library/LaunchAgents/com.user.gh-token-monitor.plist	-	ChainDrop/Tensorlake token monitor (wipes ~ when the token is revoked)	2026-10-08	https://stepsecurity.io/blog/tensorlake-npm-compromised-hostage-token-worm
+path	~/.local/bin/gh-token-monitor.sh	-	ChainDrop/Tensorlake token monitor (wipes ~ when the token is revoked)	2026-10-08	https://stepsecurity.io/blog/tensorlake-npm-compromised-hostage-token-worm
+path	~/.config/gh-token-monitor	-	ChainDrop/Tensorlake token monitor (wipes ~ when the token is revoked)	2026-10-08	https://stepsecurity.io/blog/tensorlake-npm-compromised-hostage-token-worm
+path	$TMPDIR/bun-dl-*	-	ChainDrop Bun payload staging	2026-08-04	https://www.elastic.co/security-labs/shai-hulud-chaindrop-npm-supply-chain
+path	~/.apex/agent/mcp.json	-	Apex Accelerator rogue MCP entry	2026-10-12	https://www.elastic.co/security-labs/threat-command/apex-accelerator-malicious-npm-packages
+path	~/.config/cloudsync/data.json	-	Apex Accelerator CloudSyncD (macOS)	2026-10-12	https://www.elastic.co/security-labs/threat-command/apex-accelerator-malicious-npm-packages
+path	~/.local/share/cloudsync	-	Apex Accelerator CloudSyncD (macOS)	2026-10-12	https://www.elastic.co/security-labs/threat-command/apex-accelerator-malicious-npm-packages

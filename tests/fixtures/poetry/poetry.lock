@@ -1,0 +1,7 @@
+[[package]]
+name = "xinference"
+version = "2.6.0"
+
+[[package]]
+name = "numpy"
+version = "2.0.0"

@@ -1,0 +1,3 @@
+requests==2.32.0
+MistralAI==2.4.6
+xinference[all] == 2.6.1 ; python_version>"3.9"

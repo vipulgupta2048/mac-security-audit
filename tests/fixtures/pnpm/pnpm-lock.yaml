@@ -1,0 +1,11 @@
+lockfileVersion: '9.0'
+packages:
+  keyv@6.0.0:
+    resolution: {integrity: sha512-x}
+  '@cacheable/utils@2.5.1':
+    resolution: {integrity: sha512-x}
+  keyv@4.5.4:
+    resolution: {integrity: sha512-x}
+snapshots:
+  flat-cache@6.1.24(keyv@6.0.0):
+    dependencies: {}

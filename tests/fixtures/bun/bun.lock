@@ -1,0 +1,7 @@
+{
+  "lockfileVersion": 1,
+  "packages": {
+    "tensorlake": ["tensorlake@0.5.144", "", {}, "sha512-x"],
+    "keyv": ["keyv@4.5.4", "", {}, "sha512-x"],
+  }
+}
